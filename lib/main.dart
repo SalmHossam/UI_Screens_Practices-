@@ -3,8 +3,7 @@ import 'package:quiz/Screen1.dart';
 import 'package:quiz/Screen2.dart';
 import 'package:quiz/Screen3.dart';
 
-import 'MyThemeData.dart';
-
+import 'package:carousel_slider/carousel_slider.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -23,6 +22,5 @@ class MyApp extends StatelessWidget {
         Screen2.routeName:(context)=>Screen2(),
         Screen3.routeName:(context)=>Screen3(),
       },
-      theme: MyThemeData.lightTheme
     );
   }}
