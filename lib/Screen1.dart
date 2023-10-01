@@ -94,11 +94,11 @@ class _Screen1State extends State<Screen1> {
             ),
             CarouselSlider(items: [
               Image.asset('assets/images/bg.png'),
-              Spacer(),
+              SizedBox(width: 10,),
               Image.asset('assets/images/bg.png'),
-              Spacer(),
+              SizedBox(width: 10,),
               Image.asset('assets/images/bg.png'),
-              Spacer(),
+              SizedBox(width: 10,),
             ], options: CarouselOptions()),
             Row(
               children: [
