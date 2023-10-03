@@ -2,6 +2,7 @@
     import 'package:flutter/material.dart';
     import 'package:quiz/MyColumn.dart';
     import 'package:quiz/Screen1.dart';
+import 'package:quiz/Screen3.dart';
 
     class Screen2 extends StatefulWidget {
       static const String routeName="Screen two";
@@ -253,7 +254,12 @@ class _Screen2State extends State<Screen2> {
                 BottomNavigationBarItem(icon: ImageIcon(AssetImage('assets/images/img_7.png')),
                     label: "", backgroundColor: Colors.white
                 ),
-                BottomNavigationBarItem(icon: ImageIcon(AssetImage('assets/images/img_14.png')),
+                BottomNavigationBarItem(icon: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, Screen3.routeName);
+                      setState(() {});
+                    },
+                    child: ImageIcon(AssetImage('assets/images/img_14.png'))),
                     label: "", backgroundColor: Colors.white
                 ),
                 BottomNavigationBarItem(icon: ImageIcon(AssetImage('assets/images/img_15.png')),
