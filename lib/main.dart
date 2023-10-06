@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quiz/Screen1.dart';
-import 'package:quiz/Screen2.dart';
-import 'package:quiz/Screen3.dart';
+import 'package:quiz/Screens/Screen1.dart';
+import 'package:quiz/Screens/Screen2.dart';
+import 'package:quiz/Screens/Screen3.dart';
 
 import 'package:carousel_slider/carousel_slider.dart';
 void main() {

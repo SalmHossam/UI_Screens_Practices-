@@ -1,8 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:quiz/Screen2.dart';
-import 'package:quiz/row.dart';
+import 'package:quiz/Screens/Screen2.dart';
+import 'package:quiz/Widgets/cursoal.dart';
+import 'package:quiz/Widgets/row.dart';
 
 class Screen1 extends StatefulWidget {
   static const String routeName="Screen one";
@@ -42,7 +43,7 @@ class _Screen1State extends State<Screen1> {
       ),
       backgroundColor: Colors.white,
       body: Padding(
-        padding:  EdgeInsets.symmetric(vertical: 24,horizontal: 32),
+        padding: EdgeInsets.symmetric(vertical: 24,horizontal: 32),
         child: Column(
           children: [
             SizedBox(height: 25,),
@@ -92,14 +93,9 @@ class _Screen1State extends State<Screen1> {
                 Icon(Icons.arrow_forward_ios,color: Colors.teal,)
               ],
             ),
-            CarouselSlider(items: [
-              Image.asset('assets/images/bg.png'),
-              SizedBox(width: 10,),
-              Image.asset('assets/images/bg.png'),
-              SizedBox(width: 10,),
-              Image.asset('assets/images/bg.png'),
-              SizedBox(width: 10,),
-            ], options: CarouselOptions()),
+            CarouselSliderExample(),
+            SizedBox(height: 20,),
+
             Row(
               children: [
                 Text('Exercise',style:TextStyle(
