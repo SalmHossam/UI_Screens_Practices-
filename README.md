@@ -1,4 +1,4 @@
-# quiz
+# UI_Screens_Practices 
 
 A new Flutter project.
 
